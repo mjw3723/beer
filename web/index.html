@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <title>맥주 공간</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1><a href="index.html">BEER</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+   /*화이트에서 블랙으로*/
+   var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+   while(i < alist.length){
+     alist[i].style.color ='powderblue';
+     i = i+1;
+   }
+
+   /*블랙에서 화이트로*/
+    }else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color ='blue';
+        i = i+1;
+      }
+    }">
+<div id="grid">
+    <ol>
+      <span><li><a href="1.html">라거</a></li></span>
+      <span><li><a href="2.html">밀맥주</a></li></span>
+      <span><li><a href="3.html">흑맥주</a></li></span>
+    </ol>
+  <div id="acticle">
+    <h2>맥주</h2>
+    <p>보리를 가공한 <a href="https://www.newiki.net/wiki/%EB%A7%A5%EC%95%84" target="_blank" title="맥아란 ?">맥아</a>(Malt)를 주재료로[2] 발효시키고 여기에 향신료인 홉(hop)을 첨가하여 맛을 낸 술. 양조주에 속한다. 오늘날 극빈국이 아닌 이상 어느 나라든 자국 맥주 브랜드 하나쯤은 가지고 있으므로,<strong>전세계적으로 가장 대중화된 <u>주류</u>라고 할 수 있다.</<strong></strong></p>
+    <img src="beer.jpg" width=100%;>
+    <p>맥주를 뜻하는 영어 단어 비어(beer)의 어원은 두 가지 설이 있다. ‘마시다’는 뜻을 가진 라틴어 비베레(bibere)와 ‘곡물’을 뜻하는 게르만어 베오레(bior)에서 나왔다는 설이다. 2013년 현재 한국 주세법에서 맥주는 “엿기름(밀엿기름을 포함한다.), 홉(홉 성분을 추출한 것을 포함한다.) 및 쌀 ·보리·옥수수·수수·감자·녹말·당분·캐러멜 중 하나 또는 그 이상의 것과 물을 원료로 하여 발효시켜 제성하거나 여과하여 제성한 것”으로 정의하고 있다.</p>
+    <p>맥주는 원시시대부터 제조된 과실주와 미드라 불리우는 벌꿀술에 이어서 세계에서 오래된, 곡식을 이용한 발효주로는 가장 오래된 술로 알려져 있고, 가장 대중적인 알코올 음료 중 하나이기도 하다. 맥주는 알코올 성분이 적은 편이나 이산화탄소와 홉의 쓴맛 성분을 함유하고 있어 소화를 촉진하고 이뇨작용을 돕는 효능이 있다.</p>
+  </div>
+</div>
+</body>
+</html>
