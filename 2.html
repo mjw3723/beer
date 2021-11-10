@@ -3,15 +3,48 @@
 <head>
   <title>맥주 공간</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="index.html">BEER</a><h1>
-  <ol>
-    <li><a href="1.html">라거</a><li>
-    <li><a href="2.html">밀맥주</a></li>
-    <li><a href="3.html">흑맥주</a></li>
-  </ol>
-  <h2>밀맥주</h2>
-  <p>밀맥주(독일어: Weizenbier 바이첸비어[*], 영어: wheat beer) 또는 백맥주(白麥酒, 독일어: Weißbier 바이스비어[*])는 독일 바이에른 지방에서 생겨났지만 전 세계적으로 유명한 맥주다. 흔히 쓰는 재료인 보리의 엿기름을 밀의 엿기름으로 바꾸어 만든 것이다. 원래 독일의 보통 맥주보다 밝은 색을 띠게 되어 흰 맥주라는 의미의 ‘바이스비어’라고 부르게 되었지만, 바이에른 밖에서는 밀맥주라는 뜻으로 ‘바이첸비어’라고 부른다.독일의 맥주 순수령의 후신인 독일맥주법에 의하면 독일에서 주조되는 밀맥주는 상면발효 방식인 에일(ale)로 만들어야 한다.[1] 특별한 종자의 이스트가 사용되어 발효의 부산물로 바나나와 정향(丁香, clove) 등과 비슷한 진한 향이 나게 된다.[1] 체코의 플젠 지방에서 나는 필스너와 함께 독일 전역에서 일상적으로 마시는 맥주 중의 하나이다.</p>
+  <h1><a href="index.html">BEER</a></h1>
+  <input id="night_day" type="button" value="night" onclick="
+   /*화이트에서 블랙으로*/
+   var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+   while(i < alist.length){
+     alist[i].style.color ='powderblue';
+     i = i+1;
+   }
+
+   /*블랙에서 화이트로*/
+    }else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color ='blue';
+        i = i+1;
+      }
+    }">
+<div id="grid">
+      <ol>
+        <span><li><a href="1.html">라거</a></li></span>
+        <span><li><a href="2.html">밀맥주</a></li></span>
+        <span><li><a href="3.html">흑맥주</a></li></span>
+      </ol>
+    <div id="acticle">
+      <h2>밀맥주</h2>
+      <p>밀맥주(독일어: Weizenbier 바이첸비어[*], 영어: wheat beer) 또는 백맥주(白麥酒, 독일어: Weißbier 바이스비어[*])는 독일 바이에른 지방에서 생겨났지만 전 세계적으로 유명한 맥주다. 흔히 쓰는 재료인 보리의 엿기름을 밀의 엿기름으로 바꾸어 만든 것이다. 원래 독일의 보통 맥주보다 밝은 색을 띠게 되어 흰 맥주라는 의미의 ‘바이스비어’라고 부르게 되었지만, 바이에른 밖에서는 밀맥주라는 뜻으로 ‘바이첸비어’라고 부른다.독일의 맥주 순수령의 후신인 독일맥주법에 의하면 독일에서 주조되는 밀맥주는 상면발효 방식인 에일(ale)로 만들어야 한다.[1] 특별한 종자의 이스트가 사용되어 발효의 부산물로 바나나와 정향(丁香, clove) 등과 비슷한 진한 향이 나게 된다.[1] 체코의 플젠 지방에서 나는 필스너와 함께 독일 전역에서 일상적으로 마시는 맥주 중의 하나이다.</p>
+  </div>
+</div>
 </body>
 </html>
